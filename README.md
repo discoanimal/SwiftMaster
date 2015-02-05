@@ -26,7 +26,19 @@ UIColor.Material.red
 
 ###### Flat ######
 
-red => <img src="http://placehold.it/50/E74C3C/E74C3C"/>
+red  <img src="http://placehold.it/25/E74C3C/E74C3C"/>
+<img src="http://placehold.it/25/E74C3C/E74C3C"/> red  
+
+Color | Swatch
+---- | ----
+**`red`** |<img src="http://placehold.it/25/E74C3C/E74C3C"/>
+**`red`**|`<img src="http://placehold.it/25/E74C3C/E74C3C"/>`
+**`weekday`** |`Int`
+**`weekMonth`**|`Int`
+**`days`** |`Int`
+**`hours`**|`Int`
+**`minutes`** |`Int`
+**`seconds`**| `Int`
 
 ###### Material Kit ######
 
