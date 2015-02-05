@@ -54,12 +54,11 @@ Color | Ex. | Color | Ex.
 
 
 ###### Material ######
-Color | Ex. | Color | Ex.
------ | --- | ----- | ---
-**`purple`**     | <img src="http://placehold.it/30/745EC5/745EC5"/> | **`darkPurple`**  | <img src="http://placehold.it/30/5B48A2/5B48A2"/>
+Color | Ex. | Color | Ex. | Color | Ex. | Color | Ex.
+----- | --- | ----- | --- | ----- | --- | ----- | ---
+**`red`**          | <img src="http://placehold.it/30/F44336/F44336"/>   | **`pink`**         | <img src="http://placehold.it/30/E91E63/E91E63"/> | **`purple`** | <img src="http://placehold.it/30/9C27B0/9C27B0"/> | **`deepOrange`** | <img src="http://placehold.it/30/FF5722/FF5722"/>
+**`deepPurple`**   | <img src="http://placehold.it/30/67AB70/67AB70"/>   | **`indigo`**       | <img src="http://placehold.it/30/3F51B5/3F51B5"/> | **`blue`**   | <img src="http://placehold.it/30/2196F3/2196F3"/> | **`brown`** | <img src="http://placehold.it/30/795548/795548"/>
+**`lightBlue`**    | <img src="http://placehold.it/30/03A9F4/03A9F4"/>   | **`cyan`**         | <img src="http://placehold.it/30/00BCD4/00BCD4"/> | **`teal`**   | <img src="http://placehold.it/30/009688/009688"/> | **`grey`** | <img src="http://placehold.it/30/9E9E9E/9E9E9E"/>
+**`green`**        | <img src="http://placehold.it/30/4CAF50/4CAF50"/>   | **`lightGreen`**   | <img src="http://placehold.it/30/8BC34A/8BC34A"/> | **`lime`**   | <img src="http://placehold.it/30/CDDC39/CDDC39"/> | **`blueGrey`** | <img src="http://placehold.it/30/607D8B/607D8B"/>
+**`yellow`**       | <img src="http://placehold.it/30/FFEB3B/FFEB3B"/>   | **`amber`**        | <img src="http://placehold.it/30/FFC107/FFC107"/> | **`orange`** | <img src="http://placehold.it/30/FF9800/FF9800"/> | 
 
-###### Material Kit ######
-
-A simple go service to generate a 1x1 image of a given color.
-
-http://mslabs-color-swatch.herokuapp.com/ccc => <img src="http://mslabs-color-swatch.herokuapp.com/fea" width=40 height=40 style="vertical-align: middle"/>
