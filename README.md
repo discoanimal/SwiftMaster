@@ -23,3 +23,13 @@ UIColor(rgba: "#E74C3C90")
 UIColor.Flat.red
 UIColor.Material.red
 ```
+
+###### Flat ######
+
+red => <img src="http://placehold.it/50/E74C3C/E74C3C"/>
+
+###### Material Kit ######
+
+A simple go service to generate a 1x1 image of a given color.
+
+http://mslabs-color-swatch.herokuapp.com/ccc => <img src="http://mslabs-color-swatch.herokuapp.com/fea" width=40 height=40 style="vertical-align: middle"/>
