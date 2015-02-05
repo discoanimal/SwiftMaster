@@ -1,17 +1,25 @@
-# ExSwift
+# SwiftMaster
 
-Set of Swift extensions for standard types and classes.
+Set of extensions, classes, vendor additions, etc. written in Swift 
 
-# Installation
+# Usage
 
-Because of Xcode errors it's not possible to integrate this project with Cocoapods or as Embedded Framework.
-[Read more at Dev Forum](https://devforums.apple.com/message/983747#983747)  
+This is a work in progress and is not intended for general use...yet
 
-## Use submodule and copy source code
-1. Add ExSwift as a submodule
-2. Open the `ExSwift` project folder, and drag `ExSwift` sub folder with source code into the file navigator of your Xcode project. Make sure you select add to target
-3. Use it
+# Extensions #
+
+## UI ##
+
+#### Color ####
 
 ``` swift
-components.takeFirst() { $0.completed }
+// RGBA Init
+UIColor(rgba: "#CCC")
+UIColor(rgba: "#CCC5")
+UIColor(rgba: "#E74C3C")
+UIColor(rgba: "#E74C3C90")
+
+// Custom Color Structs
+UIColor.Flat.red
+UIColor.Material.red
 ```

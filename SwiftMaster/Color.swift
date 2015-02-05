@@ -1,14 +1,5 @@
 //  Color.swift - SwiftMaster
 //  Copyright (c) 2015 jlynch.co
-// 
-//  DOC - Usage
-//
-//  UIColor(rgba: "#CCC")
-//  UIColor(rgba: "#CCC5")
-//  UIColor(rgba: "#E74C3C")
-//  UIColor(rgba: "#E74C3C90")
-//  UIColor.Flat.red
-//  UIColor.Material.red
 
 import Foundation
 import UIKit
