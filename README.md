@@ -26,11 +26,10 @@ UIColor.Material.red
 
 ###### Flat ######
 
-red  <img src="http://placehold.it/25/E74C3C/E74C3C"/>
-<img src="http://placehold.it/25/E74C3C/E74C3C"/> red  
+UIColor.Flat + 
 
-Prefix | Color | Swatch
------- | ----- | ------
+Prefix | Color | Ex.
+------ | ----- | ---
 **`UIColor.Flat`** | **`red`** | <img src="http://placehold.it/25/E74C3C/E74C3C"/>
 **`UIColor.Flat`** | **`orange`** | <img src="http://placehold.it/25/E67E21/E67E21"/>
 **`UIColor.Flat`** | **`yellow`** | <img src="http://placehold.it/25/D35400/D35400"/>
