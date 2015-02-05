@@ -6,7 +6,7 @@ Set of extensions, classes, vendor additions, etc. written in Swift
 
 ## UI ##
 
-#### Color ####
+### Color ###
 
 ``` swift
 // RGBA Init
@@ -45,12 +45,36 @@ Color | Ex. | Color | Ex. | Color | Ex. | Color | Ex.
 **`green`**        | <img src="/colors/Material/4CAF50/4CAF50"/>   | **`lightGreen`**   | <img src="/colors/Material/8BC34A/8BC34A"/> | **`lime`**   | <img src="/colors/Material/CDDC39/CDDC39"/> | **`blueGrey`**   | <img src="/colors/Material/607D8B/607D8B"/>
 **`yellow`**       | <img src="/colors/Material/FFEB3B/FFEB3B"/>   | **`amber`**        | <img src="/colors/Material/FFC107/FFC107"/> | **`orange`** | <img src="/colors/Material/FF9800/FF9800"/> | 
 
-#### NavigationBar ####
+### NavigationBar ###
 
 ``` swift
 // UINavigationBar Init
 let navBar = UINavigationBar(frame: Rect)
 navBar.hideBottomHairline() // remove bottom shadow
 navBar.showBottomHairline() // add bottom shadow 
+
+```
+
+### ToolBar ###
+
+``` swift
+// UIToolBar Init
+let tabBar = UIToolBar(...)
+navBar.hideHairline() // remove top shadow
+navBar.showHairline() // add top shadow 
+
+```
+
+### Image ###
+
+``` swift
+// UIImage
+
+```
+
+### ImageView ###
+
+``` swift
+// UIImageView
 
 ```
