@@ -27,7 +27,7 @@ UIColor.Material.red
 ###### Flat ######
 Color | Ex. | Color | Ex.
 ----- | --- | ----- | ---
-**`red`**        | <img src="http://placehold.it/30/E74C3C/E74C3C"/> | **`darkRed`**        | <img src="http://placehold.it/30/C0392C/C0392C"/>
+**`red`**        | <img src="colors/E74C3C/E74C3C.png"/> | **`darkRed`**        | <img src="/colors/C0392C/C0392C.png"/>
 **`orange`**     | <img src="http://placehold.it/30/E67E21/E67E21"/> | **`darkOrange`**     | <img src="http://placehold.it/30/D35400/D35400"/> 
 **`yellow`**     | <img src="http://placehold.it/30/FFCD01/FFCD01"/> | **`darkYellow`**     | <img src="http://placehold.it/30/FFA801/FFA801"/>
 **`sand`**       | <img src="http://placehold.it/30/F0DEB4/F0DEB4"/> | **`darkSand`**       | <img src="http://placehold.it/30/D5C295/D5C295"/>
