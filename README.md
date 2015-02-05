@@ -29,16 +29,14 @@ UIColor.Material.red
 red  <img src="http://placehold.it/25/E74C3C/E74C3C"/>
 <img src="http://placehold.it/25/E74C3C/E74C3C"/> red  
 
-Color | Swatch
----- | ----
-**`red`** |<img src="http://placehold.it/25/E74C3C/E74C3C"/>
-**`red`**|`<img src="http://placehold.it/25/E74C3C/E74C3C"/>`
-**`weekday`** |`Int`
-**`weekMonth`**|`Int`
-**`days`** |`Int`
-**`hours`**|`Int`
-**`minutes`** |`Int`
-**`seconds`**| `Int`
+Prefix | Color | Swatch
+------ | ----- | ------
+**`UIColor.Flat`** | **`red`** | <img src="http://placehold.it/25/E74C3C/E74C3C"/>
+**`UIColor.Flat`** | **`orange`** | <img src="http://placehold.it/25/E67E21/E67E21"/>
+**`UIColor.Flat`** | **`yellow`** | <img src="http://placehold.it/25/D35400/D35400"/>
+**`UIColor.Flat`** | **`sand`** | <img src="http://placehold.it/25/F0DEB4/F0DEB4"/>
+**`UIColor.Flat`** | **`navy`** | <img src="http://placehold.it/25/34495E/34495E"/>
+**`UIColor.Flat`** | **`black`** | <img src="http://placehold.it/25/2B2B2B/2B2B2B"/>
 
 ###### Material Kit ######
 
