@@ -1,10 +1,5 @@
-//
-//  Image.swift
-//  SwiftMaster
-//
-//  Created by Justin Lynch on 2/5/15.
-//  Copyright (c) 2015 jlynch.co. All rights reserved.
-//
+//  Image.swift - SwiftMaster
+//  Copyright (c) 2015 jlynch.co. All rights reserved
 
 import Foundation
 import UIKit
@@ -14,7 +9,6 @@ import CoreGraphics
 enum UIImageContentMode {
     case ScaleToFill, ScaleAspectFit, ScaleAspectFill
 }
-
 
 extension UIImage {
     
