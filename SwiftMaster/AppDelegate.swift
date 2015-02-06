@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = window {
             window.backgroundColor = UIColor.Flat.green
             self.mainNavigationController = UINavigationController()
-            let mainViewController = ViewController()
+            let mainViewController = CollectionViewController()
             self.mainNavigationController?.pushViewController(mainViewController, animated: true)
             window.rootViewController = mainNavigationController
             window.makeKeyAndVisible()

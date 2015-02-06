@@ -1,4 +1,3 @@
-//
 //  Constants.swift
 //  SwiftMaster
 //
@@ -17,3 +16,8 @@ let screenHeight = screenSize.height
 let origin = CGPoint(x: 0.0, y: 0.0)
 let navSize = CGSize(width: screenWidth, height: 64.0)
 let navRect = CGRectMake(origin.x, origin.y, navSize.width, navSize.height)
+
+
+let lightFont = UIFont (name: "HelveticaNeue-UltraLight", size: 20)
+let midFont = UIFont (name: "Avenir-Medium", size: 20)
+let boldFont = UIFont (name: "AvenirNext-Bold", size: 20) 
