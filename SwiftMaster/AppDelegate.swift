@@ -12,27 +12,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        
-        // TAB
+        // TAB VIEW
         let firstV : UIViewController = FirstViewController()
         let secondV : UIViewController = SecondViewController()
         let thirdV : UIViewController = ThirdViewController()
         let forthV : UIViewController = ForthViewController()
         let fifthV : UIViewController = FifthViewController()
         
-        firstV.title = "First"
-        secondV.title = "Second"
-        thirdV.title = "Third"
-        forthV.title = "Forth"
-        fifthV.title = "Fifth"
+        firstV.title = "Home"
+        secondV.title = "Users"
+        thirdV.title = ""
+        forthV.title = "Messages"
+        fifthV.title = "Profile"
         
-        let naviV1 : UINavigationController = UINavigationController(rootViewController: firstV)!
-        let naviV2 : UINavigationController = UINavigationController(rootViewController: secondV)!
-        let naviV3 : UINavigationController = UINavigationController(rootViewController: thirdV)!
-        let naviV4 : UINavigationController = UINavigationController(rootViewController: forthV)!
-        let naviV5 : UINavigationController = UINavigationController(rootViewController: fifthV)!
+        let naviV1 : UINavigationController = UINavigationController(rootViewController: firstV)
+        let naviV2 : UINavigationController = UINavigationController(rootViewController: secondV)
+        let naviV3 : UINavigationController = UINavigationController(rootViewController: thirdV)
+        let naviV4 : UINavigationController = UINavigationController(rootViewController: forthV)
+        let naviV5 : UINavigationController = UINavigationController(rootViewController: fifthV)
         
         let tabbarCon : UITabBarController = UITabBarController()
+        let tabBar = UITabBar(frame: CGRect(origin: CGPoint(x: 0,y: 0), size: CGSize(width: screenWidth, height: 60)))
         let arrV : NSArray = NSArray(objects: naviV1,naviV2,naviV3,naviV4,naviV5)
         tabbarCon.setViewControllers(arrV, animated: true)
         
@@ -42,20 +42,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var item4 : UITabBarItem = tabbarCon.tabBar.items?[3] as UITabBarItem
         var item5 : UITabBarItem = tabbarCon.tabBar.items?[4] as UITabBarItem
         
-        let img : UIImage = UIImage(named: "list_blue_tab")!
-        let color : UIImage = UIImage(color: UIColor.Flat.pink)!
-        var text : String = "\u{e601}"
+        let home : UIImage = UIImage(named: "tab_home")!
+        let users : UIImage = UIImage(named: "tab_users")!
+        let post : UIImage = UIImage(named: "tab_post")!
+        let messages : UIImage = UIImage(named: "tab_messages")!
+        let profile : UIImage = UIImage(named: "tab_profile")!
         
-        item1.image = img
-        item2.image = color
-        item3.image = img
-        item4.image = img
-        item5.image = img
+        item1.image = home
+        item2.image = users
+        item3.image = post
+        item4.image = messages
+        item5.image = profile
         
-        UINavigationBar.appearance().barTintColor = UIColor.yellowColor()
         let font:UIFont! = UIFont(name:"HelveticaNeue-Bold",size:10)
-        let selectedAttributes:NSDictionary! = [NSFontAttributeName:font,NSForegroundColorAttributeName:UIColor.redColor()]
+        let selectedAttributes:NSDictionary! = [NSFontAttributeName:font,NSForegroundColorAttributeName:UIColor.whiteColor(), NSBackgroundColorAttributeName:UIColor.whiteColor()]
+        UITabBar.appearance().shadowImage? = UIImage(color: UIColor.whiteColor(), size: CGSize(width: screenWidth, height: 60.0))!
         UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, forState: UIControlState.Selected)
+        UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, forState: UIControlState.Normal)
+        UITabBar.appearance().selectedImageTintColor = UIColor.Material.green
+        
         
         if let window = window {
              window.backgroundColor = UIColor.Flat.white

@@ -4,7 +4,7 @@
 import Foundation
 import UIKit
 
-extension UITabBar {
+extension UIToolbar {
     
     func hideHairline() {
         let navigationBarImageView = hairlineImageViewInToolbar(self)

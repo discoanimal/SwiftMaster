@@ -17,11 +17,14 @@ class FirstViewController : UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+        var attributes = [ NSForegroundColorAttributeName: UIColor.Flat.darkWhite, NSFontAttributeName: UIFont(name: "Avenir", size: 15)! ]
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(color: UIColor.whiteColor(), size: navSize), forBarMetrics: UIBarMetrics.Default)
-        self.view.backgroundColor = UIColor.Flat.mint
+        self.view.backgroundColor = UIColor.Flat.white
         self.navigationController?.navigationBar.hideBottomHairline()
-        
+        self.tabBarController?.tabBar.shadowImage = UIImage(color: UIColor.whiteColor(), size: CGSize(width: 60.0, height: 5.0))
+        self.tabBarController?.tabBar.backgroundImage = UIImage(color: UIColor.whiteColor(), size: CGSize(width: screenWidth, height: 2.0))
+        self.navigationController?.navigationBar.titleTextAttributes = attributes
+        self.navigationController?.tabBarController?.tabBar.translucent = true
     }
 
     override func didReceiveMemoryWarning() {
