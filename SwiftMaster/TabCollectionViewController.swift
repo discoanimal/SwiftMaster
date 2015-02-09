@@ -15,6 +15,7 @@ class TabCollectionViewController : UIViewController, UICollectionViewDataSource
         
         var collectionView : UICollectionView? = UICollectionView(frame: CGRectMake(0, 0, screenWidth, screenHeight), collectionViewLayout: flowLayout)
         collectionView?.registerClass(CollectionViewCell.self, forCellWithReuseIdentifier: "collectionCell")
+        collectionView?.registerClass(BlurCollectionViewCell.self, forCellWithReuseIdentifier: "blurCell")
         collectionView?.delegate = self
         collectionView?.dataSource = self
         collectionView?.backgroundColor = UIColor.whiteColor()
@@ -39,19 +40,20 @@ class TabCollectionViewController : UIViewController, UICollectionViewDataSource
         cell.textLabel.text = "Text"
         cell.textLabel.textColor = UIColor.Flat.white
         
-        //  Font Awesome
-//        cell.iconLabel.font = iconFont
-//        cell.iconLabel.text = "\u{f0b1}"
-//        cell.iconLabel.textColor = UIColor.Flat.white
-//        
-        //  Google Icons
-        cell.iconLabel.font = gFont
-        cell.iconLabel.text = GoogleIcon.e606
-        cell.iconLabel.textColor = UIColor.Flat.white
-        
-//        cell.iconLabel.text = "Fuck"
-//        cell.iconLabel.textColor = UIColor.Flat.green
-        cell.imageView.image = UIImage(named: "beach")
+        if indexPath.row % 3 == 0 {
+            // Font Awesome
+            cell.iconLabel.font = iconFont
+            cell.iconLabel.text = "\u{f0b1}"
+            cell.iconLabel.textColor = UIColor.Flat.white
+            cell.imageView.image = UIImage(color: UIColor.Flat.purple, size: CGSize(width: cell.frame.width, height: cell.frame.height))
+        } else {
+            //  Google Icons
+            cell.iconLabel.font = gFont
+            cell.iconLabel.text = GoogleIcon.e606
+            cell.iconLabel.textColor = UIColor.Flat.white
+            cell.imageView.image = UIImage(named: "beach")
+            
+        }
         
         return cell
         
@@ -87,6 +89,12 @@ class TabCollectionViewController : UIViewController, UICollectionViewDataSource
 
 
         
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let subV = SubViewController()
+        subV.title = String(indexPath.item)
+        self.navigationController?.pushViewController(subV, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

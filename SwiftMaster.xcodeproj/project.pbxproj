@@ -27,6 +27,10 @@
 		A06274831A84A7EE00340B9B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06274821A84A7EE00340B9B /* FirstViewController.swift */; };
 		A07132011A88B73C00D17EA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07132001A88B73C00D17EA9 /* UIKit.framework */; };
 		A07132051A88C31000D17EA9 /* TabCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07132041A88C31000D17EA9 /* TabCollectionViewController.swift */; };
+		A07132081A88CC0C00D17EA9 /* BlurredCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07132071A88CC0C00D17EA9 /* BlurredCollectionViewCell.swift */; };
+		A071320A1A88CC3B00D17EA9 /* BlurredCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07132091A88CC3B00D17EA9 /* BlurredCollectionViewController.swift */; };
+		A071320C1A88CCAE00D17EA9 /* skyiPhone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A071320B1A88CCAE00D17EA9 /* skyiPhone.jpg */; };
+		A071320E1A88CE3C00D17EA9 /* BlurCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A071320D1A88CE3C00D17EA9 /* BlurCollectionViewCell.swift */; };
 		A075F9071A83FFDB00D86FAF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075F9061A83FFDB00D86FAF /* CollectionViewController.swift */; };
 		A075F90A1A8401F400D86FAF /* beach.png in Resources */ = {isa = PBXBuildFile; fileRef = A075F9091A8401F400D86FAF /* beach.png */; };
 		A076606D1A850EBC004879B9 /* googleicon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A076606C1A850EBC004879B9 /* googleicon.ttf */; };
@@ -105,6 +109,10 @@
 		A07132001A88B73C00D17EA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A07132031A88B79400D17EA9 /* SwiftMaster.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftMaster.playground; sourceTree = "<group>"; };
 		A07132041A88C31000D17EA9 /* TabCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionViewController.swift; sourceTree = "<group>"; };
+		A07132071A88CC0C00D17EA9 /* BlurredCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredCollectionViewCell.swift; sourceTree = "<group>"; };
+		A07132091A88CC3B00D17EA9 /* BlurredCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredCollectionViewController.swift; sourceTree = "<group>"; };
+		A071320B1A88CCAE00D17EA9 /* skyiPhone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skyiPhone.jpg; sourceTree = "<group>"; };
+		A071320D1A88CE3C00D17EA9 /* BlurCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurCollectionViewCell.swift; sourceTree = "<group>"; };
 		A075F9061A83FFDB00D86FAF /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A075F9091A8401F400D86FAF /* beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beach.png; sourceTree = "<group>"; };
 		A076606C1A850EBC004879B9 /* googleicon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = googleicon.ttf; sourceTree = "<group>"; };
@@ -306,9 +314,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A07132061A88CBE600D17EA9 /* BlurredCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A07132091A88CC3B00D17EA9 /* BlurredCollectionViewController.swift */,
+			);
+			name = BlurredCollectionView;
+			sourceTree = "<group>";
+		};
 		A075F9081A8401D200D86FAF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A071320B1A88CCAE00D17EA9 /* skyiPhone.jpg */,
 				A03487201A8595FA00F8D8BF /* tab_messages@2x.png */,
 				A034871E1A8595F200F8D8BF /* tab_post@2x.png */,
 				A034871C1A8595E600F8D8BF /* tab_profile@2x.png */,
@@ -392,6 +409,8 @@
 			isa = PBXGroup;
 			children = (
 				A0C8BAC21A84383700808E7F /* CollectionViewCell.swift */,
+				A07132071A88CC0C00D17EA9 /* BlurredCollectionViewCell.swift */,
+				A071320D1A88CE3C00D17EA9 /* BlurCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -399,6 +418,7 @@
 		A0C8BAC41A84389700808E7F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A07132061A88CBE600D17EA9 /* BlurredCollectionView */,
 				A062747C1A84A10500340B9B /* TabBarController */,
 				A06274741A84801C00340B9B /* ModalViewController */,
 				A058A0E21A83999D001AF804 /* ViewController.swift */,
@@ -512,6 +532,7 @@
 			files = (
 				A076606D1A850EBC004879B9 /* googleicon.ttf in Resources */,
 				A07660711A850FB9004879B9 /* FontAwesome.otf in Resources */,
+				A071320C1A88CCAE00D17EA9 /* skyiPhone.jpg in Resources */,
 				A058A0EB1A83999D001AF804 /* LaunchScreen.xib in Resources */,
 				A058A0E81A83999D001AF804 /* Images.xcassets in Resources */,
 				A03487211A8595FA00F8D8BF /* tab_messages@2x.png in Resources */,
@@ -545,6 +566,7 @@
 				A08278AD1A83A9B800378C28 /* SpringTextView.swift in Sources */,
 				A075F9071A83FFDB00D86FAF /* CollectionViewController.swift in Sources */,
 				A06274781A8480DC00340B9B /* PresentedViewController.swift in Sources */,
+				A071320E1A88CE3C00D17EA9 /* BlurCollectionViewCell.swift in Sources */,
 				A0FB8F6B1A853E2900167F36 /* PageMenu.swift in Sources */,
 				A08278921A83A99200378C28 /* DesignableTextField.swift in Sources */,
 				A058A0E11A83999D001AF804 /* AppDelegate.swift in Sources */,
@@ -564,6 +586,7 @@
 				A08278941A83A99200378C28 /* DesignableView.swift in Sources */,
 				A082788D1A83A99200378C28 /* BlurView.swift in Sources */,
 				A06274831A84A7EE00340B9B /* FirstViewController.swift in Sources */,
+				A071320A1A88CC3B00D17EA9 /* BlurredCollectionViewController.swift in Sources */,
 				A082787D1A83A29700378C28 /* ImageView.swift in Sources */,
 				A00B0AC71A85794E0082564F /* Font.swift in Sources */,
 				A08278951A83A99200378C28 /* ImageLoader.swift in Sources */,
@@ -571,6 +594,7 @@
 				A08278AE1A83A9B800378C28 /* SpringView.swift in Sources */,
 				A062747B1A8493B000340B9B /* NavigationController.swift in Sources */,
 				A0FB8F6F1A85514700167F36 /* ThirdViewController.swift in Sources */,
+				A07132081A88CC0C00D17EA9 /* BlurredCollectionViewCell.swift in Sources */,
 				A082789B1A83A9AA00378C28 /* Misc.swift in Sources */,
 				A08278911A83A99200378C28 /* DesignableTabBarController.swift in Sources */,
 				A08278751A83A13500378C28 /* NavigationBar.swift in Sources */,
