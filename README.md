@@ -98,6 +98,6 @@ cell.iconLabel.textColor = UIColor.Flat.white
 http://google.github.io/material-design-icons/
 
 ###### FontAwesome Icons ######
-http://google.github.io/material-design-icons/
+http://fortawesome.github.io/Font-Awesome/icons/
 
 
