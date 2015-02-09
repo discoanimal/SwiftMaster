@@ -17,7 +17,7 @@ class FirstViewController : UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        var attributes = [ NSForegroundColorAttributeName: UIColor.Flat.darkWhite, NSFontAttributeName: UIFont(name: "Avenir", size: 15)! ]
+        var attributes = [ NSForegroundColorAttributeName: UIColor.Flat.darkWhite, NSFontAttributeName: UIFont(name: "Avenir", size: 18)! ]
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(color: UIColor.whiteColor(), size: navSize), forBarMetrics: UIBarMetrics.Default)
         self.view.backgroundColor = UIColor.Flat.white
         self.navigationController?.navigationBar.hideBottomHairline()

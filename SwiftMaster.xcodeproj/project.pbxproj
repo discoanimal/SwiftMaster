@@ -25,6 +25,8 @@
 		A062747B1A8493B000340B9B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062747A1A8493B000340B9B /* NavigationController.swift */; };
 		A062747E1A84A33400340B9B /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062747D1A84A33400340B9B /* SubViewController.swift */; };
 		A06274831A84A7EE00340B9B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06274821A84A7EE00340B9B /* FirstViewController.swift */; };
+		A07132011A88B73C00D17EA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07132001A88B73C00D17EA9 /* UIKit.framework */; };
+		A07132051A88C31000D17EA9 /* TabCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07132041A88C31000D17EA9 /* TabCollectionViewController.swift */; };
 		A075F9071A83FFDB00D86FAF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075F9061A83FFDB00D86FAF /* CollectionViewController.swift */; };
 		A075F90A1A8401F400D86FAF /* beach.png in Resources */ = {isa = PBXBuildFile; fileRef = A075F9091A8401F400D86FAF /* beach.png */; };
 		A076606D1A850EBC004879B9 /* googleicon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A076606C1A850EBC004879B9 /* googleicon.ttf */; };
@@ -100,6 +102,9 @@
 		A062747A1A8493B000340B9B /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A062747D1A84A33400340B9B /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		A06274821A84A7EE00340B9B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A07132001A88B73C00D17EA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A07132031A88B79400D17EA9 /* SwiftMaster.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftMaster.playground; sourceTree = "<group>"; };
+		A07132041A88C31000D17EA9 /* TabCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionViewController.swift; sourceTree = "<group>"; };
 		A075F9061A83FFDB00D86FAF /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A075F9091A8401F400D86FAF /* beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beach.png; sourceTree = "<group>"; };
 		A076606C1A850EBC004879B9 /* googleicon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = googleicon.ttf; sourceTree = "<group>"; };
@@ -109,7 +114,6 @@
 		A08278771A83A1B700378C28 /* Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		A08278791A83A23900378C28 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		A082787C1A83A29700378C28 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		A082787E1A83A37100378C28 /* SwiftMaster.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftMaster.playground; sourceTree = "<group>"; };
 		A08278801A83A72A00378C28 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A08278841A83A99200378C28 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		A08278851A83A99200378C28 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07132011A88B73C00D17EA9 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +169,9 @@
 		A058A0D21A83999D001AF804 = {
 			isa = PBXGroup;
 			children = (
-				A082787E1A83A37100378C28 /* SwiftMaster.playground */,
+				A07132031A88B79400D17EA9 /* SwiftMaster.playground */,
 				A058A0DD1A83999D001AF804 /* SwiftMaster */,
+				A07132021A88B76B00D17EA9 /* Frameworks */,
 				A058A0F31A83999E001AF804 /* SwiftMasterTests */,
 				A058A0DC1A83999D001AF804 /* Products */,
 			);
@@ -287,8 +293,17 @@
 				A0FB8F6E1A85514700167F36 /* ThirdViewController.swift */,
 				A0FB8F721A8554F300167F36 /* ForthViewController.swift */,
 				A0FB8F741A85550900167F36 /* FifthViewController.swift */,
+				A07132041A88C31000D17EA9 /* TabCollectionViewController.swift */,
 			);
 			name = TabViews;
+			sourceTree = "<group>";
+		};
+		A07132021A88B76B00D17EA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A07132001A88B73C00D17EA9 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A075F9081A8401D200D86FAF /* Resources */ = {
@@ -533,6 +548,7 @@
 				A0FB8F6B1A853E2900167F36 /* PageMenu.swift in Sources */,
 				A08278921A83A99200378C28 /* DesignableTextField.swift in Sources */,
 				A058A0E11A83999D001AF804 /* AppDelegate.swift in Sources */,
+				A07132051A88C31000D17EA9 /* TabCollectionViewController.swift in Sources */,
 				A08278B11A83A9B800378C28 /* UnwindSegue.swift in Sources */,
 				A08278AB1A83A9B800378C28 /* SpringLabel.swift in Sources */,
 				A0C8BAC31A84383700808E7F /* CollectionViewCell.swift in Sources */,

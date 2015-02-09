@@ -13,9 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         // TAB VIEW
-        let firstV : UIViewController = FirstViewController()
+        let firstV : UIViewController = TabCollectionViewController()
         let secondV : UIViewController = SecondViewController()
-        let thirdV : UIViewController = ThirdViewController()
+        let thirdV : UIViewController = PresentingViewController()
         let forthV : UIViewController = ForthViewController()
         let fifthV : UIViewController = FifthViewController()
         
@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabbarCon : UITabBarController = UITabBarController()
         let tabBar = UITabBar(frame: CGRect(origin: CGPoint(x: 0,y: 0), size: CGSize(width: screenWidth, height: 60)))
         let arrV : NSArray = NSArray(objects: naviV1,naviV2,naviV3,naviV4,naviV5)
+        tabbarCon.tabBar.translucent = false
         tabbarCon.setViewControllers(arrV, animated: true)
         
         var item1 : UITabBarItem = tabbarCon.tabBar.items?[0] as UITabBarItem
@@ -59,10 +60,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().shadowImage? = UIImage(color: UIColor.whiteColor(), size: CGSize(width: screenWidth, height: 60.0))!
         UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, forState: UIControlState.Selected)
         UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, forState: UIControlState.Normal)
+        
         UITabBar.appearance().selectedImageTintColor = UIColor.Material.green
         
         
         if let window = window {
+             window.tintColor = UIColor.Flat.red
              window.backgroundColor = UIColor.Flat.white
              window.rootViewController = tabbarCon
              window.makeKeyAndVisible()

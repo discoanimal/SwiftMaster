@@ -78,3 +78,26 @@ navBar.showHairline() // add top shadow
 // UIImageView
 
 ```
+
+### Font Icons ###
+
+``` swift
+//  Google Icons
+cell.iconLabel.font = gFont
+cell.iconLabel.text = GoogleIcon.e606
+cell.iconLabel.textColor = UIColor.Flat.white
+
+//  Font Awesome Icons
+cell.iconLabel.font = iconFont
+cell.iconLabel.text = "\u{f0b1}"
+cell.iconLabel.textColor = UIColor.Flat.white
+
+```
+
+###### Google Material Icons ######
+http://google.github.io/material-design-icons/
+
+###### FontAwesome Icons ######
+http://google.github.io/material-design-icons/
+
+

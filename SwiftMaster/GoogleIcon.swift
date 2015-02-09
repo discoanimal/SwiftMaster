@@ -1,10 +1,5 @@
-//
 //  GoogleIcon.swift
 //  GoogleMaterialDesignIcons
-//
-//  Created by 波戸 勇二 on 12/9/14.
-//  Copyright (c) 2014 Yuji Hato. All rights reserved.
-//
 
 let GoogleIconName: String = "googleicon"
 
